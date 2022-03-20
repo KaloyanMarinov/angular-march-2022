@@ -1,0 +1,9 @@
+<div class="container">
+  <main>
+    <app-welcome *ngIf="!isLogged"></app-welcome>
+    <div class="theme-title">
+      <app-theme-item *ngFor="let theme of themesList" [theme]="theme" [isLogged]="isLogged"></app-theme-item>
+    </div>
+  </main>
+  <aside><app-aside></app-aside></aside>
+</div>
